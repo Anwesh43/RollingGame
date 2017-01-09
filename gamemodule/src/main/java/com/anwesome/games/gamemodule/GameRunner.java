@@ -51,7 +51,7 @@ public class GameRunner implements Runnable {
         this.w = w;
         midX=w;
         screen = new Screen(0,0);
-        rollingBall = new RollingBall(0,h/2);
+        rollingBall = RollingBall.newInstance(h/2);
     }
     public GameRunner(SurfaceHolder surfaceHolder) {
         this.surfaceHolder = surfaceHolder;

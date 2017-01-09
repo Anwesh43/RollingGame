@@ -9,10 +9,10 @@ import android.graphics.RectF;
  * Created by anweshmishra on 09/01/17.
  */
 public class RollingBall {
-    private float RADIUS_OF_BALL = 100;
+    private static float RADIUS_OF_BALL = 100;
     private float rolling_deg = 0,speed=0;
     private float x,y;
-    public RollingBall(float x,float y) {
+    private RollingBall(float x,float y) {
         this.x = x;
         this.y = y;
     }
@@ -38,5 +38,8 @@ public class RollingBall {
     }
     public boolean crossesDistance(float x) {
         return this.x>=x;
+    }
+    public static RollingBall newInstance(float y) {
+        return new RollingBall(RADIUS_OF_BALL,y);
     }
 }
