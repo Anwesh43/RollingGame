@@ -22,7 +22,7 @@ public class RollingBall {
         canvas.rotate(rolling_deg);
         paint.setColor(Color.parseColor("#f44336"));
         canvas.drawArc(new RectF(-RADIUS_OF_BALL,-RADIUS_OF_BALL,RADIUS_OF_BALL,RADIUS_OF_BALL),0,180,true,paint);
-        paint.setColor(Color.parseColor("#2196F3"));
+        paint.setColor(Color.parseColor("#FAFAFA"));
         canvas.drawArc(new RectF(-RADIUS_OF_BALL,-RADIUS_OF_BALL,RADIUS_OF_BALL,RADIUS_OF_BALL),180,180,true,paint);
         canvas.restore();
     }
