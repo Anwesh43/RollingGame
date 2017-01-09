@@ -26,7 +26,7 @@ public class GameRunner implements Runnable {
                 if(time == 0) {
                     initObjects(canvas.getWidth(),canvas.getHeight());
                 }
-                canvas.drawColor(Color.parseColor("#00E676"));
+                canvas.drawColor(Color.parseColor(GameConstants.BACKGROUND_COLOR_HEX));
                 canvas.save();
                 canvas.translate(screen.getX(),screen.getY());
                 rollingBall.draw(canvas,paint);
